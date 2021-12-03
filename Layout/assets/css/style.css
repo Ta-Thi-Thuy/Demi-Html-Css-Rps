@@ -43,7 +43,7 @@ input[type=password]:focus {
     background-color: #f4f9ff;
 }
 
-#btn-submit-login{
+#btn-submit-login {
     width: 300px;
     background-color: #4e4d4d;
     border-radius: 5px;
@@ -52,7 +52,7 @@ input[type=password]:focus {
     font-size: 16px;
 }
 
- /*Custom Checkbox*/
+/*Custom Checkbox*/
 .containers {
     margin-top: 15px;
     padding-right: 40px;
@@ -111,6 +111,37 @@ input[type=password]:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+
+/*Page Information */
+.hr-information {
+    border: 1px solid #dbdee5;
+}
+
+.box-information-menu {
+    margin-top: 40px;
+    margin-right: 145px;
+    margin-left: 145px;
+}
+
+.img-information {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.information-name{
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.information-menu {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #4390de;
+    border-radius: 8px;
+    width: 345px;
+    height: 310px;
 }
 
 
