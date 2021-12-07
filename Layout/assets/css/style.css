@@ -115,25 +115,90 @@ input[type=password]:focus {
 
 
 /*Page Information */
-.hr-information {
+body {
+    background-color: #f5fafc;
+}
+
+.master-header-box {
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.master-header {
     border: 1px solid #dbdee5;
 }
 
-.box-information-menu {
-    margin-top: 40px;
-    margin-right: 145px;
-    margin-left: 145px;
+.title-header {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
 }
+
+.header-information {
+    float: right;
+}
+
+.select-box-information {
+    width: 200px;
+    float: left;
+}
+
+.icon-menu {
+    width: 120px;
+}
+
+.select-box-option {
+    display: flex;
+    justify-content: space-between
+}
+
+.line-height {
+    width: 10px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.select-box-icon {
+    text-align: center;
+
+}
+
+.icon-help {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.date-time {
+    width: 170px;
+}
+
+.date-time-information {
+    text-align: center;
+    font-size: 18px;
+}
+
+.v1-menu-information {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
 
 .img-information {
     margin-top: 30px;
-    margin-bottom: 30px;
 }
-.information-name{
+
+.information-name {
     text-align: center;
     font-size: 28px;
     color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .information-menu {
     display: block;
     margin: auto;
@@ -142,6 +207,33 @@ input[type=password]:focus {
     border-radius: 8px;
     width: 345px;
     height: 310px;
+}
+
+.v2-information {
+    margin-top: 35px;
+    margin-right: 95px;
+    margin-left: 95px;
+}
+
+.title-information {
+    font-size: 23px;
+}
+
+.box-content-information {
+    background-color: #FFFFFF;
+    height: 300px;
+}
+
+.content-information {
+    padding-top: 15px;
+    padding-left: 100px;
+    height: 55px;
+    font-size: 22px;
+}
+
+.content-v2 {
+    background-color: #FFFFFF;
+    height: 100px;
 }
 
 

@@ -8,112 +8,154 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/information.js"></script>
 </head>
 <body>
-<header>
-    <div class="row">
-        <div class="col-md-1">
-            <img class="hide-menu" src="assets/img/information_page/hide_menu@0.75x.png">
-        </div>
-        <div class="row col-md-11">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-2">
-                <ul> (株)日立物流中部
-                    <a>
-                        <img src="assets/img/information_page/select_box_arrow_enabled.png">
-                    </a>
-
-                </ul>
-
-            </div>
-            <div class="col-md-2">
-                <ul> 中部 静岡東
-                    <a>
-                        <img src="assets/img/information_page/select_box_arrow_enabled.png">
-                    </a>
-
-                </ul>
-            </div>
-            <div class="col-md-2">
-
-                <ul>
-                    <a>
-                        <img src="assets/img/information_page/avatar.png">
-                    </a>
-                    杉山 まtesttesttest
-                </ul>
-            </div>
-            <div class="col-md-1">
-                <a>
-                    <img src="assets/img/information_page/help.png">
-                </a>
-                <a>
-                    <img src="assets/img/information_page/icon_Settings.png">
+<header class="master-header-box ">
+    <div class=" master-header-box master-header row">
+        <div class="title-header col-lg-3">
+            <div class="icon-aside">
+                <a href="#" id="menu-sidebar">
+                    <img class="hide-menu" src="assets/img/information_page/hide_menu@0.75x.png">
                 </a>
             </div>
-            <div class="col-md-2 present-time">
-
-            </div>
-
         </div>
-
+        <div class=" title-header menu-header col-lg-9">
+            <div class="header-information ">
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-company">
+                        <div class="select-box-option">
+                            <span> (株)日立物流中部</span>
+                            <img class="img-select-box"
+                                 src="assets/img/information_page/select_box_arrow_enabled.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-office">
+                        <div class="select-box-option">
+                            <span>  中部 静岡東</span>
+                            <img class="img-select-box"
+                                 src="assets/img/information_page/select_box_arrow_enabled.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-user-name-display">
+                        <div class="select-box-option">
+                            <img class="img-avatar"
+                                 src="assets/img/information_page/avatar.png">
+                            <span>杉山 まtesttesttest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information icon-menu">
+                    <div class="select-box-icon">
+                        <a href="#" class="icon-help">
+                            <img src="assets/img/information_page/help.png">
+                        </a>
+                        <a href="#" class="icon-help">
+                            <img src="assets/img/information_page/icon_Settings.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information date-time">
+                    <div class="date-time-information">
+                        <span class="present-time"></span>
+                        <span class="current-time"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
-<hr class="hr-information">
 <div class="content">
-    <div>
-        <div class="row box-information-menu">
-            <div class="col-md-3 information-menu attendence-menu">
+    <div class="row v1-menu-information ">
+        <div class=" col-md-3 box-information-menu">
+            <div class=" information-menu attendance-menu">
                 <img class="img-information" src="assets/img/information_page/home_index.png">
                 <div class="information-name">
                     <span>点呼</span>
                 </div>
             </div>
-            <div class="col-md-3 information-menu">
-                <div>
-                    <img class="img-information" src="assets/img/information_page/home_movie.png">
-                    <div class="information-name">
-                        <span>イベント一覧</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 information-menu">
-                <div>
-                    <img class="img-information" src="assets/img/information_page/home_map.png">
-                    <div class="information-name">
-                        <span>運行管理状況</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 information-menu">
-                <div>
-                    <img class="img-information" src="assets/img/information_page/home_kpi.png">
-                    <div class="information-name">
-                        <span>安全KPI</span>
-                    </div>
+        </div>
+        <div class=" col-md-3 box-information-menu">
+            <div class=" information-menu">
+                <img class="img-information" src="assets/img/information_page/home_movie.png">
+                <div class="information-name">
+                    <span>イベント一覧</span>
                 </div>
             </div>
         </div>
+        <div class=" col-md-3 box-information-menu">
+            <div class=" information-menu">
+                <img class="img-information" src="assets/img/information_page/home_map.png">
+                <div class="information-name">
+                    <span>運行管理状況</span>
+                </div>
 
-    </div>
-    <div>
-        <div>
-            <img src="assets/img/information_page/icon_Info.png">
-            <span>Information</span>
+            </div>
         </div>
-        <div>
-            <img src="assets/img/information_page/detail_open.png">
-            <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+        <div class=" col-md-3 box-information-menu">
+            <div class=" information-menu">
+                <img class="img-information" src="assets/img/information_page/home_kpi.png">
+                <div class="information-name">
+                    <span>安全KPI</span>
+                </div>
+            </div>
         </div>
-
     </div>
+    <!--    <div class="v2-information">
+            <div class="title-information">
+                <img src="assets/img/information_page/icon_Info.png">
+                <span>Information</span>
+            </div>
+            <div class="box-content-information">
+                <div class="content-information">
+                    <img id="open-icon" src="assets/img/information_page/detail_open.png">
+                    <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                </div>
+                <div class="content-information">
+                    <img src="assets/img/information_page/detail_open.png">
+                    <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                </div>
+                <div class="content-information">
+                    <img src="assets/img/information_page/detail_open.png">
+                    <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                </div>
+                <div class="content-information">
+                    <img src="assets/img/information_page/detail_open.png">
+                    <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                </div>
+                <div class="content-information">
+                    <img src="assets/img/information_page/detail_open.png">
+                    <span> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                </div>
+            </div>
+        </div>-->
 </div>
-<footer>
-    <div>
-        <span></span>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <div>-->
+<!--        <span></span>-->
+<!--    </div>-->
+<!--</footer>-->
 </body>
 </html>
