@@ -2,9 +2,271 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Information Mobile </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/information.js"></script>
 </head>
 <body>
+<header class="master-header-box " style="display: none">
+    <div class=" master-header-box master-header row">
+        <div class="navbar-menu col-lg-3">
+            <div class="icon-aside">
+                <a href="#" id="menu-sidebar">
+                    <img class="hide-menu" src="assets/img/information_page/hide_menu@0.75x.png">
+                </a>
+            </div>
+        </div>
+        <div class=" navbar-menu navbar-hide-mb ">
+            <div class="header-information ">
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-company">
+                        <div class="select-box-option">
+                            <span> (株)日立物流中部</span>
+                            <img class="img-select-box"
+                                 src="assets/img/information_page/select_box_arrow_enabled.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-office">
+                        <div class="select-box-option">
+                            <span>  中部 静岡東</span>
+                            <img class="img-select-box"
+                                 src="assets/img/information_page/select_box_arrow_enabled.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information">
+                    <div class="select-box-user-name-display">
+                        <div class="select-box-option">
+                            <img class="img-avatar"
+                                 src="assets/img/information_page/avatar.png">
+                            <span>杉山 まtesttesttest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information icon-menu">
+                    <div class="select-box-icon">
+                        <a href="#" class="icon-help">
+                            <img src="assets/img/information_page/help.png">
+                        </a>
+                        <a href="#" class="icon-help">
+                            <img src="assets/img/information_page/icon_Settings.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="line-height">
+                    <span> | </span>
+                </div>
+                <div class="select-box-information date-time">
+                    <div class="date-time-information">
+                        <span class="present-time"></span>
+                        <span class="current-time"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="master-header-box">
+    <div class="main-header-row-mobile">
+        <div class="header-left-mobile">
+            <a class="mini-menu padding0i">
+                <img class="img-menu" src="assets/img/information_page/hide_menu@0.75x.png">
+            </a>
+        </div>
+        <div class="header-addr-mobile">
+            <span class="">ホーム</span>
+        </div>
+    </div>
+</header>
+<div class="row content-information-page">
+    <div class="col-lg-12 v1-menu-information ">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 box-menu">
+            <a href="#">
+                <div class="icon-logo">
+                    <img class="img-home" src="assets/img/information_page/home_index.png">
+                    <img class="img-default blocked" src="assets/img/information_page/home_index.png">
+                    <img class="img-hover blocked" src="assets/img/information_page/home_index_hover.png">
+                </div>
+                <p class="info-name">点呼</p>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 box-menu box-menu-2">
+            <a href="#">
+                <div class="icon-logo">
+                    <img class="img-home" src="assets/img/information_page/home_movie.png">
+                    <img class="img-default blocked" src="assets/img/information_page/home_movie.png">
+                    <img class="img-hover blocked" src="assets/img/information_page/home_movie_hover.png">
+                </div>
+                <p class="info-name">イベント一覧</p>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 box-menu">
+            <a href="#">
+                <div class="icon-logo">
+                    <img class="img-home" src="assets/img/information_page/home_map.png">
+                    <img class="img-default blocked" src="assets/img/information_page/home_map.png">
+                    <img class="img-hover blocked" src="assets/img/information_page/home_map_hover.png">
+                </div>
+                <p class="info-name">運行管理状況</p>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 box-menu box-menu-4">
+            <a href="#">
+                <div class="icon-logo">
+                    <img class="img-home" src="assets/img/information_page/home_kpi.png">
+                    <img class="img-default blocked" src="assets/img/information_page/home_kpi.png">
+                    <img class="img-hover blocked" src="assets/img/information_page/home_kpi_hover.png">
+                </div>
+                <p class="info-name">安全KPI</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-12 v2-information">
+        <div class="title-information">
+            <img class="icon-info" src="assets/img/information_page/icon_Info.png">
+            <span>Information</span>
+        </div>
+        <div class="box-content-notification">
+            <div class="notify-content">
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+                        <span class="text-title"> 2021/01/04 システムメンテナンスのお知らせ(1/10)</span>
+                    </div>
+                    <div class="detail-title">
+                        <span>
+                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                        </span> <br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
 
+                </div>
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+                        <span class="text-title"> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                    </div>
+                    <div class="detail-title">
+                         <span>
+                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                        </span><br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
+                </div>
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+                        <span class="text-title"> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                    </div>
+                    <div class="detail-title">
+                                         <span>
+                                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                                        </span><br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
+                </div>
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+                        <span class="text-title"> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                    </div>
+                    <div class="detail-title">
+                                         <span>
+                                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                                        </span><br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
+                </div>
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+
+                        <span class="text-title">2020/09/01 スのお知らせ システムメンテナンスのお知らせ(09/16)</span>
+                    </div>
+                    <div class="detail-title">
+                                         <span>
+                                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                                        </span><br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
+                </div>
+                <div class="content-information">
+                    <div class="title-info">
+                        <img class="open-icon" src="assets/img/information_page/detail_open.png">
+                        <img class="close-icon" src="assets/img/information_page/detail_close.png">
+                        <span class="text-title"> 2020/02/01 システムメンテナンスのお知らせ(01/16)</span>
+                    </div>
+                    <div class="detail-title">
+                                         <span>
+                                            00月00日　00：00（〇曜日）～00月00日　00：00（〇曜日）はシステムメンテナンスのためダッシュボードを利用出来ませんお客様にはご不便をおかけ致しますが、何率ご理解いただきますようお願い申し上げます。5
+                                        </span><br>
+                        <span> メンテナンス日時： 0000年00月00日（〇曜日）00：00～00：00まで</span> <br>
+                        <span>2021-02-05 14:59:55</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 v3-information">
+        <div class="contact-info">
+            <div class="row">
+                <div class="contact-info-v1">
+                    <ul class="ul-contact ">
+                        <li class="title-contact">SSCV-Safetyサービスデスク</li>
+                        <li class="detail-contact">(機器故障、システム不具合、操作方法) </li>
+                        <li class="detail-contact">Tel ：050-3310-0755（9時～17時 土日祝除く)</li>
+                    </ul>
+
+                </div>
+                <div class="contact-info-v2">
+                    <ul class="ul-contact">
+                        <li class="title-contact">その他お問い合わせ先  </li>
+                        <li class="detail-contact">(機器設置場所変更、契約・請求など)</li>
+                        <li class="detail-contact">Tel ：0120-85-8580（9時～17時 土日祝除く)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+    <div class="text-footer">
+        <p>&copy; Hitachi Transport System, Ltd. 2021. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

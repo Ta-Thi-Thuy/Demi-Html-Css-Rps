@@ -40,17 +40,21 @@
         changeIcon: function () {
             var el = this;
             $(el.jsIconClick).click(function () {
-                var imgOpen = $(this).find('.close-icon').attr("src");
-                console.log(imgOpen,'close');
-                $(this).find('.open-icon').attr("src", imgOpen);
-                console.log('open');
+                $(el.jsIconClose).show();
+                $(el.jsIconOpen).hide();
+                // var imgOpen = $(this).find('.close-icon').attr("src");
+                // console.log(imgOpen,'close');
+                // $(this).find('.open-icon').attr("src", imgOpen);
+               console.log('open');
                 $(this).find('.detail-title').slideDown('show');
 
             });
                 // $(el.jsIconClick).click(function () {
+                //     $(el.jsIconClose).hide();
+                //     $(el.jsIconOpen).show();
                 // console.log('test');
-                // var imgClose = $(this).find('.open-icon-default').attr("src");
-                // $(this).find('.open-icon').attr("src", imgClose);
+                // // var imgClose = $(this).find('.open-icon-default').attr("src");
+                // // $(this).find('.open-icon').attr("src", imgClose);
                 // $(this).find('.detail-title').slideUp();
             // });
 
