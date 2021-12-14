@@ -102,9 +102,9 @@ input[type=password]:focus {
 
 /* Style the checkmark/indicator */
 .containers .checkmark:after {
-    left: 7px;
+    left: 6px;
     top: 2px;
-    width: 6px;
+    width: 7px;
     height: 12px;
     border: solid #595959;
     border-width: 0 3px 3px 0;
@@ -115,7 +115,7 @@ input[type=password]:focus {
 
 
 /*Page Information */
-body {
+.body-information {
     background-color: #f5fafc;
 }
 
@@ -228,13 +228,13 @@ body {
     color: #FFFFFF;
 }
 
-
 .v2-information {
     padding: 0px 90px;
 }
 
 .title-information {
-    font-size: 23px;
+    font: normal normal bold 24px Yu Gothic;
+
 }
 
 .box-content-notification {
@@ -256,10 +256,23 @@ body {
 }
 
 .title-info {
-    font-size: 22px;
+
 }
 
-.detail-title, .close-icon, .open-icon-default {
+.icon-open-detail {
+    text-decoration: none;
+}
+
+.text-title {
+
+    text-align: left;
+    font: normal normal bold 22px Yu Gothic;
+    letter-spacing: 0px;
+    color: #364F65;
+    opacity: 1;
+}
+
+.detail-title, .close-icon, .default-open {
     display: none;
 }
 
@@ -294,5 +307,6 @@ body {
     background-color: #FFFFFF;
     height: 100px;
 }
+
 
 
