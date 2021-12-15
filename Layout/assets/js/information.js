@@ -12,6 +12,7 @@
         _init: function () {
             this.handleEvent();
             this.hoverIcon();
+            this.infoIconInactive();
             this.changeIcon();
 
         },
@@ -36,38 +37,29 @@
                 $(this).find('.img-home').attr("src", imgHover);
             });
         },
-        // infoIconInactive: function () {
-        //     var el = this;
-        //     $.each($(el.jsIconLogo), function(){
-        //         if ($(this).hasClass('disabled')) {
-        //             console.log('test');
-        //             var imgInactive = $(this).find('.img-inactive').attr("src");
-        //             $(this).find('.img-default').attr("src", imgInactive);
-        //         }
-        //     });
-        // },
-
+        infoIconInactive: function () {
+            var el = this;
+            $.each($(el.jsIconLogo), function(){
+                if ($(this).hasClass('disabled')) {
+                    console.log('test');
+                    var imgInactive = $(this).find('.img-inactive').attr("src");
+                    $(this).find('.img-default').attr("src", imgInactive);
+                }
+            });
+        },
         changeIcon: function () {
             var el = this;
             $(el.jsIconClick).click(function () {
-                // if ($('.close-icon').is(":hidden")) {
-                //     $('.detail-title').slideDown('slow', function () {
-                //         var imgOpen = $(this).find('.close-icon').attr("src");
-                //         $(this).find('.open-icon').attr("src", imgOpen);
-                //     });
-                // } else {
-                //     $('.slide-out-div').slideUp('slow');
-                //     var imgOpen = $(this).find('.open-icon').attr("src");
-                //     $(this).find('.close-icon').attr("src", imgOpen);
-                // }
-
+                if ($(this).find('.close-icon').is(":hidden")) {
+                    $(this).find('.open-icon').css('display', 'none');
+                    $(this).find('.close-icon').css('display', 'block');
+                    $(this).find('.detail-title').slideDown();
+                } else {
+                    $(this).find('.close-icon').css('display', 'none');
+                    $(this).find('.open-icon').css('display', 'block');
+                    $(this).find('.detail-title').slideUp();
+                }
             });
-            //     $(el.jsIconClick).click(function () {
-            //     var imgClose = $(this).find('.close-icon').attr("src");
-            //     $(this).find('.open-icon').attr("src", imgClose);
-            //     $(this).find('.detail-title').slideUp();
-            // });
-
         }
 
     }

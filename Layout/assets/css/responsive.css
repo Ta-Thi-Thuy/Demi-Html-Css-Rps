@@ -203,9 +203,12 @@
 
     }
 
+    .inactiveBoxMenu {
+        background-color: #bfdaf3;
+    }
+
     .icon-logo img {
         width: 96px;
-
     }
 
     .icon-logo {
@@ -253,6 +256,7 @@
 
     .content-information {
         padding-top: 15px !important;
+        padding-bottom: 0px !important;
     }
 
     .title-info {
@@ -325,21 +329,6 @@
         padding: 0px 20px;
     }
 
-    .main-footer .text-footer {
-        text-align: left;
-        padding: 0 20px;
-        font-size: 11px;
-        font-weight: normal;
-    }
-
-    .main-footer .text-footer p {
-        padding: 0px
-    }
-
-    .main-footer {
-        margin: 20px 0;
-    }
-
     .ul-contact li {
         text-decoration: none;
         list-style-type: none;
@@ -372,6 +361,22 @@
         font-size: 14px;
         letter-spacing: 0px;
         color: #364F65;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .text-footer {
+        margin-left: 20px;
+        padding-right: 0px;
+        text-align: left;
+        font-size: 11px;
+        font-weight: normal;
+        float: left;
+    }
+    .inactiveBoxMenu {
+        background-color: #bfdaf3;
     }
 
 }
