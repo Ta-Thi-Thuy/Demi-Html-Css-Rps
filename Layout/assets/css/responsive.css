@@ -199,12 +199,12 @@
         background-color: #72ace6;
     }
 
-    .box-menu:disabled {
-
-    }
-
     .inactiveBoxMenu {
         background-color: #bfdaf3;
+        pointer-events: none;
+    }
+    .inactiveBoxMenu .info-name{
+        opacity: 30% !important;
     }
 
     .icon-logo img {
@@ -374,9 +374,6 @@
         font-size: 11px;
         font-weight: normal;
         float: left;
-    }
-    .inactiveBoxMenu {
-        background-color: #bfdaf3;
     }
 
 }

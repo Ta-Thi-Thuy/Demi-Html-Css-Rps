@@ -153,6 +153,7 @@ input[type=password]:focus {
 .select-box-option {
     display: flex;
     justify-content: space-between;
+    font: normal normal bold 17px Yu Gothic;
 
 }
 
@@ -180,7 +181,7 @@ input[type=password]:focus {
 
 .date-time-information {
     text-align: center;
-    font-size: 18px;
+    font: normal normal bold 18px Yu Gothic;
 }
 
 .content-information-page {
@@ -207,6 +208,7 @@ input[type=password]:focus {
 
 .box-menu:hover {
     background-color: #72ace6;
+
 }
 
 .box-menu a {
