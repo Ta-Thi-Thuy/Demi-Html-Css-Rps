@@ -7,13 +7,16 @@
         jsIconClose: '.close-icon',
         jsIconClick: '.content-information',
         showDetailInfo: '.detail-title',
+        iconMenu: '.header-left-mobile',
+        jsCloseSideBar: '.js-menu-sidebar-close',
 
 
         _init: function () {
             this.handleEvent();
             this.hoverIcon();
-            this.infoIconInactive();
+            // this.infoIconInactive();
             this.changeIcon();
+            // this.showSidebarMenu();
 
         },
         handleEvent: function () {
@@ -27,6 +30,7 @@
             $(".present-time").text(curYear + "/" + curMonth + "/" + curDay);
             $(".current-time").text(hours + ":" + minutes);
         },
+
         hoverIcon: function () {
             var el = this;
             $(el.jsHoverIcon).hover(function () {
@@ -35,16 +39,6 @@
             }, function () {
                 var imgHover = $(this).find('.img-default').attr("src");
                 $(this).find('.img-home').attr("src", imgHover);
-            });
-        },
-        infoIconInactive: function () {
-            var el = this;
-            $.each($(el.jsIconLogo), function(){
-                if ($(this).hasClass('disabled')) {
-                    console.log('test');
-                    var imgInactive = $(this).find('.img-inactive').attr("src");
-                    $(this).find('.img-default').attr("src", imgInactive);
-                }
             });
         },
         changeIcon: function () {
@@ -60,7 +54,17 @@
                     $(this).find('.detail-title').slideUp();
                 }
             });
-        }
+        },
+        // showSidebarMenu: function (){
+        //     var el = this;
+        //     $(el.iconMenu).click(function (){
+        //         console.log('test');
+        //         $('.menu-sidebar').show();
+        //     });
+        //     $(el.jsCloseSideBar).click(function (){
+        //         $('.menu-sidebar').hide();
+        //     })
+        // }
 
     }
 })(jQuery);

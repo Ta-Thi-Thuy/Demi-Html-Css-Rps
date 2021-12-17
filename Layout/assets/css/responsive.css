@@ -1,4 +1,4 @@
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 320px) {
 
     /*Page Login Mobile*/
     body {
@@ -10,13 +10,14 @@
     }
 
     .form-login {
-        width: 320px;
-        margin: 0 auto;
+        width: auto;
+        margin: 0 5px;
         text-align: center;
     }
 
     .logo-login {
-        width: 320px;
+        width: 100%;
+        text-align: center;
     }
 
     .form-submit-login {
@@ -186,11 +187,10 @@
     .v1-menu-information {
         padding: 0px 20px;
         margin-bottom: 0px !important;
+        width: auto;
     }
 
     .box-menu {
-        width: 150px !important;
-        height: 150px !important;
         margin-right: 20px;
         margin-bottom: 20px;
     }
@@ -203,7 +203,8 @@
         background-color: #bfdaf3;
         pointer-events: none;
     }
-    .inactiveBoxMenu .info-name{
+
+    .inactiveBoxMenu .info-name {
         opacity: 30% !important;
     }
 
@@ -365,15 +366,14 @@
 
     .footer {
         position: relative;
+        float: left;
+        padding-right: 0px;
     }
 
     .text-footer {
         margin-left: 20px;
-        padding-right: 0px;
         text-align: left;
         font-size: 11px;
-        font-weight: normal;
-        float: left;
     }
 
 }
