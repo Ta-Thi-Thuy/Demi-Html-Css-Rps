@@ -8,15 +8,14 @@
         jsIconClick: '.content-information',
         showDetailInfo: '.detail-title',
         iconMenu: '.header-left-mobile',
-        jsCloseSideBar: '.js-menu-sidebar-close',
+        jsCloseSideBar: '#btn-click-close',
 
 
         _init: function () {
             this.handleEvent();
             this.hoverIcon();
-            // this.infoIconInactive();
             this.changeIcon();
-            // this.showSidebarMenu();
+            this.showSidebarMenu();
 
         },
         handleEvent: function () {
@@ -55,16 +54,16 @@
                 }
             });
         },
-        // showSidebarMenu: function (){
-        //     var el = this;
-        //     $(el.iconMenu).click(function (){
-        //         console.log('test');
-        //         $('.menu-sidebar').show();
-        //     });
-        //     $(el.jsCloseSideBar).click(function (){
-        //         $('.menu-sidebar').hide();
-        //     })
-        // }
+        showSidebarMenu: function (){
+            var el = this;
+            $(el.iconMenu).click(function (){
+                console.log('test');
+                $('.menu-sidebar').show();
+            });
+            $(el.jsCloseSideBar).click(function (){
+                $('.menu-sidebar').hide();
+            })
+        }
 
     }
 })(jQuery);
