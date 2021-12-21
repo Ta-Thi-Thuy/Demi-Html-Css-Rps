@@ -428,28 +428,41 @@
     }
 
     .select-box-header {
-        padding-top: 23px;
+        padding-top: 20px;
+    }
+
+    .select-box-company, .select-box-office {
+        margin-bottom: 10px;
+        padding-right: 20px;
     }
 
     .menu-sidebar-main li {
         background-color: #FFFFFF;
     }
 
-    .menu-sidebar-main li , .title-menu{
+    .menu-sidebar-main li, .title-menu {
         padding: 13px 20px;
-
     }
-    .js-menu-item{
+
+    .js-menu-item {
         text-decoration: none;
     }
-    .js-menu-item span , .avatar-header span{
+    .form-select{
+        height: 40px;
+        background-image: url("../img/information_page/selectbox_icon_mobile.svg");
+        background-size: auto;
+        background-position: center right;
+    }
+
+    .js-menu-item span, .avatar-header span ,.select-box-office select, .select-box-company select {
         text-align: left;
         font: normal normal bold 18px/20px Yu Gothic;
         letter-spacing: 0px;
         color: #364F65;
         opacity: 1;
     }
-    .title-menu , .select-box-header span{
+
+    .title-menu, .select-box-header span {
         text-align: left;
         font: normal normal bold 14px/20px Yu Gothic;
         letter-spacing: 0px;
